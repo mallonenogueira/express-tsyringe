@@ -5,7 +5,15 @@ import Http from "./http";
 export default class Service {
   constructor(private http: Http) {}
 
-  execute() {
-    return this.http.listAll();
+  list() {
+    return this.http.list();
+  }
+
+  store() {
+    return this.http.store();
+  }
+
+  delete() {
+    return this.http.delete();
   }
 }
